@@ -1,5 +1,37 @@
 # 更新内容说明
 
+# 3.3.0 (2022-08-05)
+
+**Breaking Changes:**
+
+1. 添加属性级别的访问权限
+   
+2. db_async选项改名为durable
+
+**Improvements And Bug Fixes:**
+
+1. 使用gtest框架
+
+2. 修复graph为空导致崩溃的问题
+   
+3. 使用WAL，大幅提高写效率
+
+# 3.2.0 (2022-07-19)
+
+**Breaking Changes:**
+
+1. Edge增加timestamp作为排序键
+   
+2. 调整少量parallel plugin API
+
+**Improvements And Bug Fixes:**
+
+1. 增加WAL功能，可以提高写操作性能，并降低磁盘性能对系统性能的影响
+   
+2. Transaction maxreaders由默认值126增大到240，可同时支持更多readers
+   
+3. LDBC SNB Audit 2022 版本
+
 ## 3.1.1 (2022-07-08) 
 
 **Breaking Changes:**
